@@ -8,79 +8,201 @@
   
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css" integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  
 </head>
-<body>
-
-  Features
-  Pricing
-  Resources
-
-  Login
-  Sign Up
-
-  More than just shorter links
-
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
-
-  Get Started
-  
-  Shorten a link here...
-
-  Shorten It!
-
-  Advanced Statistics
-
-  Track how your links are performing across the web with our 
-  advanced statistics dashboard.
-
-  Brand Recognition
-
-  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
-
-  Detailed Records
-
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
-
-  Fully Customizable
-
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
-
-  Boost your links today
-
-  Get Started
-
-  Features
-
-  Link Shortening
-  Branded Links
-  Analytics
-
-  Resources
-
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body style="overflow-x: hidden;" >
+  <div class="container-sm" style="overflow-x: hidden;">
+    <nav class=" ps-4 ps-sm-0 pt-4 pt-sm-2 navbar navbar-expand-lg">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand fw-bold fs-navbar text-gravish-violet" href="#">Shortly</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ps-sm-3" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item me-sm-3">
+              <a class="nav-link" aria-current="page" href="#">Features</a>
+            </li>
+            <li class="nav-item me-sm-3">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Login</a>
+            </li>
+            <li class="nav-item ms-sm-3">
+              <button class="nav-link btn bg-cyan text-white btn-md rounded-pill text-white" aria-current="page" href="#">Sign up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="row flex-column-reverse flex-sm-row px-4 px-sm-0">
+      <div class="col-md d-flex flex-column justify-content-center justify-content-sm-start" style="padding-top: 7rem; padding-bottom: 16rem">
+        <h1 class="fw-bold text-gravish-violet text-center text-sm-start" style="font-size: 3.5rem" >More than just <br> shorter links</h1>
+        <p class="text-black-50 fs-5 mb-5 text-center text-sm-start" >Build your brand’s recognition and get detailed <br> insights 
+          on how your links are performing.</p>
+        <button class="btn bg-cyan text-white btn-get-start btn-lg rounded-pill px-4">Get Started</button>
+      </div>
+      <div class="col-md pt-5">
+        <img src="images/illustration-working.svg" class="position-absolute img-illustration-work" alt="">
+      </div>
+    </div>
   </div>
+  <div class="bg-light d-flex justify-content-center">
+    <div class="container-sm" style="padding-bottom: 20rem;padding-top: 7rem">
+      <div class="row px-4 px-sm-0" style="margin-top: -12rem">
+        <div class="col bg-dark-violet px-sm-0 rounded-4">
+          <img src="images/bg-shorten-desktop.svg" id="bgshorten" class="w-100" alt="">
+          <input type="text" class="form-control position-absolute form-control-lg ms-5 input-shorten" placeholder="Shorten a link here..." style="margin-top: -7rem">
+          <button class="btn bg-cyan text-white btn-lg position-absolute btn-shorten">Shorten It!</button>
+        </div>
+      </div>
+      <div class="row px-4 px-sm-0 mt-3 mb-3">
+        <div class="col rounded-2 d-flex flex-sm-row flex-column justify-content-between bg-white px-sm-4 px-0 py-3">
+          <div class="short-title">
+            <p class="mt-sm-3 mt-0 ps-4 ps-sm-0" >https://www.frontendmentor.io</p>
+          </div>
+          <div class="d-flex flex-sm-row px-4 px-sm-0 mt-3 mt-sm-0 flex-column" >
+            <p class="mt-sm-3 text-primary" >https://rel.ink/k4lkyk</p>
+            <button class="btn bg-cyan text-white btn-sm ms-sm-3">Copy</button>
+          </div>
+        </div>
+      </div>
+      <div class="row px-4 px-sm-0 mt-3 mb-3">
+        <div class="col rounded-2 d-flex flex-sm-row flex-column justify-content-between bg-white px-sm-4 px-0 py-3">
+          <div class="short-title">
+            <p class="mt-sm-3 mt-0 ps-4 ps-sm-0" >https://www.frontendmentor.io</p>
+          </div>
+          <div class="d-flex flex-sm-row px-4 px-sm-0 mt-3 mt-sm-0 flex-column" >
+            <p class="mt-sm-3 text-primary" >https://rel.ink/k4lkyk</p>
+            <button class="btn bg-cyan text-white btn-sm ms-sm-3">Copy</button>
+          </div>
+        </div>
+      </div>
+      <div class="row px-4 px-sm-0 mt-3 mb-3">
+        <div class="col rounded-2 d-flex flex-sm-row flex-column justify-content-between bg-white px-sm-4 px-0 py-3">
+          <div class="short-title">
+            <p class="mt-sm-3 mt-0 ps-4 ps-sm-0" >https://www.frontendmentor.io</p>
+          </div>
+          <div class="d-flex flex-sm-row px-4 px-sm-0 mt-3 mt-sm-0 flex-column" >
+            <p class="mt-sm-3 text-primary" >https://rel.ink/k4lkyk</p>
+            <button class="btn bg-cyan text-white btn-sm ms-sm-3">Copy</button>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 px-4 px-sm-0">
+        <div class="col" style="padding-bottom: 5rem;">
+          <p class="fw-bold text-center fs-2">Advanced Statistics</p>
+          <p class="fs-5 text-secondary text-center" >Track how your links are performing across the web with <br> our 
+            advanced statistics dashboard.</p>
+        </div>
+      </div>
+      <div class="row px-4 px-sm-0" style="margin-bottom: -11rem">
+        <div class="col-md ps-sm-0">
+          <div class="card px-3 pb-4 pt-5 border-0">
+            <div class="card-body">
+              <div class="bg-dark-violet-boost rounded-circle w-auto px-2 position-absolute h-25" style="margin-top: -6rem" >
+                <img src="images/icon-brand-recognition.svg" class="mt-1" alt="">
+              </div>
+              <h5 class="card-title">Brand Recognition</h5>
+              <p class="card-text">Boost your brand recognition with <br> each click. Generic links don’t 
+                mean a thing. Branded links help instil confidence in your content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card px-3 pb-4 pt-5 border-0" style="margin-top: 2.5rem;">
+            <div class="card-body">
+              <div class="bg-dark-violet-boost rounded-circle w-auto px-2 position-absolute h-25" style="margin-top: -6rem" >
+                <img src="images/icon-detailed-records.svg" class="mt-2" alt="">
+              </div>
+              <h5 class="card-title">Detailed Records</h5>
+              <p class="card-text">Gain insights into who is clicking your links. Knowing when and where 
+                people engage with your content helps inform better decisions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md pe-sm-0">
+          <div class="card px-3 pb-4 pt-5 border-0" style="margin-top: 4.5rem;">
+            <div class="card-body">
+              <div class="bg-dark-violet-boost rounded-circle w-auto px-2 position-absolute h-25" style="margin-top: -6rem" >
+                <img src="images/icon-fully-customizable.svg" class="mt-2" alt="">
+              </div>
+              <h5 class="card-title">Fully Customizable</h5>
+              <p class="card-text">Improve brand awareness and content discoverability through customizable 
+                links, supercharging audience engagement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col bg-primary line-cards" style="height: 0.5rem;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark-violet-boost" style="overflow-x: hidden;">
+    <div class="container-sm">
+      <div class="col">
+        <img src="images/bg-boost-desktop.svg" alt="">
+        <h1 class="text-center text-white position-absolute fs-2 boost-link-title" >Boost your links today</h1>
+        <button class="btn bg-cyan text-white btn-lg position-absolute rounded-pill px-4 boost-link-button" >Get Started</button>
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark">
+    <div class="container-sm" style="padding-bottom: 5rem">
+      <div class="row">
+        <div class="col-md pt-5">
+          <h1 class="fs-3 text-white text-center text-sm-start">Shortly</h1>
+        </div>
+        <div class="col-md-6 ps-0 pt-5 ps-sm-5 d-flex flex-column flex-sm-row align-items-center align-items-sm-start">
+          <ul class="list-group list-group-flush w-25 me-sm-5">
+            <li class="list-group-item text-white fw-bold bg-dark border-0 mb-3">Features</li>
+            <li class="list-group-item text-white fw-light bg-dark border-0 text-center text-sm-start">Link shortening</li>
+            <li class="list-group-item text-white fw-light bg-dark border-0 text-center text-sm-start">Branded links</li>
+            <li class="list-group-item text-white fw-light bg-dark border-0 text-center text-sm-start">Analytics</li>
+          </ul>
+          <ul class="list-group list-group-flush w-25 me-sm-5">
+            <li class="list-group-item text-white fw-bold bg-dark border-0 mb-3">Resources</li>
+            <li class="list-group-item text-white fw-light bg-dark border-0 text-center text-sm-start">Blog</li>
+            <li class="list-group-item text-white fw-light bg-dark border-0 text-center text-sm-start">Developers</li>
+            <li class="list-group-item text-white fw-light bg-dark border-0 text-center text-sm-start">Support</li>
+          </ul>
+          <ul class="list-group list-group-flush w-25 me-sm-5">
+            <li class="list-group-item text-white fw-bold bg-dark border-0 mb-3">Company</li>
+            <li class="list-group-item text-white fw-light bg-dark border-0 text-center text-sm-start">About</li>
+            <li class="list-group-item text-white fw-light bg-dark border-0 text-center text-sm-start">Our Team</li>
+            <li class="list-group-item text-white fw-light bg-dark border-0 text-center text-sm-start">Careers</li>
+            <li class="list-group-item text-white fw-light bg-dark border-0 text-center text-sm-start">Contact</li>
+          </ul>
+        </div>
+        <div class="col-md pt-5 d-flex justify-content-center justify-content-sm-start">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item bg-dark border-0">
+              <img src="images/icon-facebook.svg" alt="">
+            </li>
+            <li class="list-group-item bg-dark border-0">
+              <img src="images/icon-twitter.svg" alt="">
+            </li>
+            <li class="list-group-item bg-dark border-0">
+              <img src="images/icon-pinterest.svg" alt="">
+            </li>
+            <li class="list-group-item bg-dark border-0">
+              <img src="images/icon-instagram.svg" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
