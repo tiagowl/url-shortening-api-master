@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/tiagowl/url-shortening-api-master)
+- Live Site URL: [Vercel](https://url-shortening-api-master-eta.vercel.app/)
 
 ## My process
 
